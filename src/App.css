@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+}
+
+.App-header h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.counter-section, .users-section {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+}
+
+.counter-section h2, .users-section h2 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.counter-section p {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+button {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.user-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.user-card h3 {
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.user-card p {
+  margin: 0;
+  color: #f0f0f0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 2rem;
+  }
+  
+  .counter-section, .users-section {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+}
